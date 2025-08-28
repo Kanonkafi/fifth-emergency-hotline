@@ -1,113 +1,3 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
-
-### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
-
-### 📅 No Deadline For 50 marks
-
-### 📅 Deadline For 30 marks: Any time after 29th August.
-
----
-
-## ✅ Main Requirements (50 Marks)
-
-### 1. Navbar
-
-- **Website name & logo** on the left as Figma
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
-
----
-
-### 2. Hero Section
-
-- **Background Gradient** in the Whole Section
-- **A Relevant Logo** at the top-center
-- **Section Title** in the center
-- **A Relevant Slogan** in the bottom Center
-
----
-
-### 2. Main Section
-
-This Section will have layout as figma
-
-<table border=1 width="100%" cellpadding="50">
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
- </tr>
- <tr>
-    <td colspan=9 >Card Section</td>
-    <td colspan=3>History Section</td>
- </tr>
-</table>
-
-### Emergency Hotline Section
-
-- **Show Minimum 6 cards**. Each card will contain:
-  - Icon or Image
-  - Relevant Name
-  - Relevant Name in English
-  - Hotline number for calling
-  - Category Badge
-  - 💗 icon at left
-  - **2 buttons** at the bottom: Copy and Call with icons as Figma
-
-### History Section
-
-- **A white Background** in the whole section
-- **History Title with icon** at the top-left as Figma
-- **Clear History Button** at the top-right as Figma
-
----
-
-### 3. Responsiveness (5 Marks)
-
-- Website should be fully **responsive for mobile devices** (implementation up to you)
-
----
-
-## Functionalities
-
-### 4. Heart Icons
-
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
-
----
-
-### 5. Call Buttons
-
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
-
----
-
-### 5. Call History Section
-
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
-
----
-
-## Create Readme
-
-You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
-
 ### 6. Answer the following questions clearly:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
@@ -116,50 +6,121 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
----
+Ans:
+1.
+getElementById: শুধুমাত্র একটা element খুঁজে আনে,id ইউনিক হওয়া উচিত।
+                id="project-box"
+                document.getElementById("project-box")
 
-## 🧪 Challenges Part (10 Marks)
+getElementsByClassName:যত ক্লাস আছে সব নিয়ে আসে ,একই নামের অনেক জায়গায়     
+                       ক্লাস থাকতে পারে 
+                       HTMLCollection (array-like, কিন্তু সত্যিকারের array না)।
 
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
+querySelector: CSS selector দিয়ে প্রথম matching element আনে।
+               document.querySelector(".myClass")
+               document.querySelector("#myId")
 
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
+querySelectorAll(): CSS selector দিয়ে সব matching element  
+                    আনে।                
 
-💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
+2.                    নতুন element তৈরি করা
+                 document.createElement() ব্যবহার করি।
+             const newDiv = document.createElement("div");
 
-```bash
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step.
-```
+                   কন্টেন্ট / অ্যাট্রিবিউট যোগ করা
+              লেখা যোগ → textContent বা innerHTML
+              class / id → className, setAttribute()
 
-- After clicking on the **Call button**, the **exact time of the call** will be shown in the Call History section (3 Marks)
+            newDiv.textContent = "আমি নতুন একটা div!";
+            newDiv.className = "card"; // class যোগ
+           newDiv.setAttribute("id", "new-box"); // id সেট
 
-💡Hint: Search Google with that below question
+                  DOM এ বসানো (Insert করা)
+                     appendChild()
+            container এর সবচেয়ে শেষে যোগ করবে।
+             document.body.appendChild(newDiv);                  
 
-```bash
-How to get current local time in js
-```
+3. What is **Event Bubbling** and how does it work? 
+         vent Bubbling হলো DOM এ event trigger হলে সেটা ভেতরের element থেকে শুরু করে ধাপে ধাপে বাইরের parent element পর্যন্ত চলে যাওয়া।
+         মানে →
+         যদি তুমি একটা child element (যেমন button) এ click করো, তাহলে event টি প্রথমে সেই button এ হবে → তারপর তার parent div এ যাবে → তারপর body → তারপর document → window পর্যন্ত পৌঁছাবে।           
+          <div id="parent" style="padding:20px; background:lightblue;">
+                 Parent
+               <button id="child">Click Me</button>
+          </div>
+          document.getElementById("child").addEventListener("click", function() {
+          console.log("Child button clicked");
+          });
 
----
+         document.getElementById("parent").addEventListener("click", function() {
+         console.log("Parent div clicked");
+         });
 
-## ⚙️ Technology Stack
+        document.body.addEventListener("click", function() {
+        console.log("Body clicked");
+        });
 
-- HTML
-- CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
-- JavaScript ( Vanilla only. No Framework / Library Allowed )
+4. What is **Event Delegation** in JavaScript? Why is it useful?
+          Event Delegation মানে হলো –
+          একটা parent element এ event listener বসানো, যাতে করে তার ভেতরের সব child element এর event গুলো automatically handle করা যায়।
 
----
+         মানে:
+          প্রতিটি child element এ আলাদা আলাদা listener বসানোর দরকার নেই → এক parent এ বসালেই সব child এর ইভেন্ট ধরা যাবে।
+ <ul id="menu">
+  <li class="item">Home</li>
+  <li class="item">About</li>
+  <li class="item">Contact</li>
+</ul>
+document.getElementById("menu").addEventListener("click", function(e) {
+  if (e.target && e.target.matches("li.item")) {
+    console.log("Clicked:", e.target.textContent);
+  }
+});
+ কেন Event Delegation দরকার?
+ কম কোড → Efficient
+প্রতিটি child এ আলাদা listener বসাতে হয় না।
+Dynamic elements handle করা সহজ
+DOM এ যদি পরে নতুন child যোগ হয়, তাহলেও parent এর listener ওগুলো ধরতে পারবে।
+Performance ভালো
+এক parent এ ১টা listener vs ১০০টা child এ ১০০টা listener → parent এরটা অনেক efficient।
 
-## 📌 Rules
+5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
-- ✅ Minimum **5 meaningful commits** required
-- ❌ No Lorem Ipsum or dummy placeholder text. Use **relevant content only**
+    preventDefault()	
+    কোনো element এর default behavior বন্ধ করে (যেমন link এ না যাওয়া, form submit না হওয়া)	Default action বন্ধ করতে
+    অনেক HTML element এর নিজের একটা default action থাকে।
+    যেমন:
+      <a> ট্যাগ → ক্লিক করলে অন্য পেজে নিয়ে যায়।
 
----
+      <form> → submit করলে পেজ রিলোড হয়।
 
-## 🔗 What to Submit
+      preventDefault() 
+        <a href="https://google.com" id="link">Go to Google</a>
+         <script>
+    document.getElementById("link").addEventListener("click", function(e) {
+      e.preventDefault(); // লিংক কাজ করবে না
+      console.log("Link click blocked!");
+     });
+     </script>
 
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
 
----
+   stopPropagation()	
 
-# Let's Code and Achieve your Dream 🎯
+   Event এর উপরে propagate হওয়া বন্ধ করে (child → parent এ আর যাবে না)	Bubbling / Capturing বন্ধ করতে
+   vent Bubbling বা Event Capturing থামায়।
+   মানে → event আর parent element এর দিকে propagate করবে না।
+   <div id="parent" style="padding:20px; background:lightblue;">
+  Parent
+  <button id="child">Click Me</button>
+</div>
+
+<script>
+document.getElementById("child").addEventListener("click", function(e) {
+  e.stopPropagation(); // ইভেন্ট আর parent এ যাবে না
+  console.log("Child button clicked");
+});
+
+document.getElementById("parent").addEventListener("click", function() {
+  console.log("Parent div clicked");
+});
+</script>

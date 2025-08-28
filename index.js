@@ -43,7 +43,7 @@ servicesBox.addEventListener ("click",function(e){
     const number = card.querySelector(".font-extrabold").textContent.trim();
 
     if (coinCount < 20) {
-      alert("আপনার পর্যাপ্ত কয়েন নেই । কল করার জন্য আপনার কমপক্ষে ২০ কয়েন লাগবে");
+      alert("❌ আপনার পর্যাপ্ত কয়েন নেই । কল করার জন্য আপনার কমপক্ষে ২০ কয়েন লাগবে");
       return;
     }
 
