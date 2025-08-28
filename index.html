@@ -15,38 +15,38 @@
 <body>
    <header >
     <!-- nav bar section -->
-    <section class=" md:max-w-[1250px] sm:max-w-[640px] mx-auto shadow-[0_1px_50px_rgba(181,181,181,0.25)] bg-white flex justify-between items-center sm:flex-row justify-between items-center py-[24px] px-[60px] sm:py-6 sm:px-8 md:px-[60px] gap-4 sm:gap-0 ">
+    <section class=" md:max-w-[1250px] sm:max-w-[640px] mx-auto shadow-[0_1px_50px_rgba(181,181,181,0.25)] bg-white flex flex-col sm:flex-row justify-between items-center py-[24px] px-[60px] sm:py-6 sm:px-8 md:px-[60px] gap-4 sm:gap-0 ">
          <!-- nav bar left -->
         <div class="nav-left flex justify-center items-center gap-2">
                 <!-- logo and EmergencyService -->
-           <div class="logo-imag w-16 ">
+           <div class="logo-imag w-16 sm:w-14 md:w-16 ">
               <img src="./assets/logo.png" alt="">
             </div>
        
-             <div class="logo-Pase-likha">
-                <h1 class="text-[#006747] text-2xl font-bold">
+             <div class="logo-Pase-likha sm:text-left">
+                <h1 class="text-[#006747] sm:text-xl md:text-2xl font-bold">
                 Emergency<br>Service
                 </h1>
             </div>
         </div>
       <!-- nav right -->
-        <div class="nav-right flex justify-center items-center gap-4">
+        <div class="nav-right flex justify-center items-center sm:justify-end items-center gap-4">
               <!-- 1st heart icon   id="heart-count" -->
-            <div class="w-[120px] h-[52px] flex justify-center items-center gap-2 rounded-[50px] bg-[#41ff6b1a] ">
-                <h1 id="heart-count" class="font-bold text-lg">0</h1>
-                <img src="./assets/heart.png" alt="" class=" w-7">
+            <div class="w-[100px] sm:w-[110px] md:w-[120px] h-[46px] sm:h-[50px] md:h-[52px] flex justify-center items-center gap-2 rounded-full bg-[#41ff6b1a]">
+                <h1 id="heart-count" class="font-bold md:text-lg sm:text-base">0</h1>
+                <img src="./assets/heart.png" alt="" class="w-6 md:w-7">
             </div>
 
              <!-- 2nd coin icon id="coin-count" -->
-            <div class="w-[120px] h-[52px] flex justify-center items-center gap-2 rounded-[50px] bg-[#41ff6b1a] ">
-                <h1 id="coin-count" class="font-bold text-lg">100</h1>
-                <img src="./assets/coin.png" alt="" class=" w-7">
+            <div class="md:w-[120px] sm:w-[110px] md:h-[52px] sm:h-[50px] flex justify-center items-center gap-2 rounded-[50px] bg-[#41ff6b1a] ">
+                <h1 id="coin-count" class="font-bold md:text-lg sm:text-base">100</h1>
+                <img src="./assets/coin.png" alt="" class="w-6 md:w-7">
             </div>
 
              <!-- 3rd copy icon id="copy-count"-->
-            <div class="w-[120px] h-[52px] flex justify-center items-center gap-2 rounded-[50px] bg-[#00a63e] text-white ">
-                <h1 id="copy-count" class="font-bold text-lg">2</h1>
-                <p class="text-lg font-semibold">copy</p>
+            <div class="md:w-[120px] sm:w-[110px] md:h-[52px] sm:h-[50px] flex justify-center items-center gap-2 rounded-[50px] bg-[#00a63e] text-white ">
+                <h1 id="copy-count" class="sm:text-base font-bold md:text-lg sm:text-base">2</h1>
+                <p class="md:text-lg sm:text-base font-semibold">copy</p>
             </div>
 
         </div>
@@ -56,19 +56,19 @@
    <!-- hero,  -->
    <main>
          <!-- banner section -->
-          <section class="max-w-[1250px] mx-auto h-[280px]
-                          bg-[linear-gradient(90deg,rgba(1.25,49.64,34.61,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] flex-column justify-center items-center py-[30px] px-[60px] text-center">
+          <section class="max-w-full md:max-w-[1250px] sm:max-w-[640px] mx-auto h-auto
+                          bg-[linear-gradient(90deg,rgba(1.25,49.64,34.61,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] flex-col justify-center items-center py-[30px] md:px-[60px] sm:px-8 text-center py-6 px-4 ">
                     <!-- logo img -->
                 <div >
-                    <img src="./assets/ban.png" alt="" class=" sm:w-24 md:w-28 rounded-full  mx-auto">
+                    <img src="./assets/ban.png" alt="" class="w-20 sm:w-24 md:w-28 rounded-full mx-auto">
                 </div>
                     <!-- জরুরি সেবা ডিরেক্টরি  and Government Emergency Services -->
                 <div>
-                    <p class="font-bold text-white text-4xl mt-7">জরুরি সেবা ডিরেক্টরি</p>
+                    <p class="font-bold text-white text-2xl sm:text-3xl md:text-4xl mt-6">জরুরি সেবা ডিরেক্টরি</p>
                     
                 </div>
                 <div>
-                    <p class="font-bold text-white sm:text-base md:text-lg mt-7">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
+                    <p class="font-bold text-white text-2xl sm:text-3xl md:text-4xl mt-6">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
                 </div>
                 
                     
@@ -76,243 +76,242 @@
           
           <!-- জাতীয় জরুরি সেবা সমূহ সেকশন-->
           
-          <section id="service-container" class="w-9/12 mx-auto mt-7 border-2 border-green-500 grid grid-cols-12 gap-8">
+          <section id="service-container" class="w-11/12 sm:w-10/12 md:w-9/12 mx-auto mt-7
+           grid grid-cols-1 sm:grid-cols-12 gap-6 sm:gap-8">
                     <!-- জরুরি সেবা   id="services-box"-->
-                <section id="services-box" class="col-span-8">
+                <section id="services-box" class="col-span-12 sm:col-span-8">
                     <!-- জরুরি সেবা  r card gulo -->
                     <div class="service">
                         <!-- 12 ta card er parent eikahne grid marbo -->
-                        <div class="service-items grid grid-cols-3 gap-4">
+                        <div class="service-items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                             
                             <!--1st জাতীয় জরুরি সেবা -->
-                            <div class="relative bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
+                            <div class="relative bg-white rounded-2xl shadow-md p-4 sm:p-5 md:p-6 hover:shadow-lg transition">
                                 <!-- heart icon and image class=fa-heart-->
-                                <span class="absolute top-4 right-4 text-xl"><i class="fa-solid fa-heart"></i></span>
-                                <div class="mb-3">
+                                <span class="absolute top-3 right-3 sm:top-4 sm:right-4 text-lg sm:text-xl md:text-2xl"><i class="fa-solid fa-heart"></i></span>
+                                <div class="mb-2 sm:mb-3">
                     
-                                        <div class="w-14 h-14 bg-red-100 rounded-xl p-2">
+                                        <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-red-100 rounded-xl p-2">
                                            <img src="./assets/emergency.png" alt="" class="w-full h-full object-contain">
                                         </div>
                                     
                                 </div>
 
-                                    <h3 class="text-lg font-bold">জাতীয় জরুরি সেবা</h3>
-                                    <p class="text-sm text-gray-600">National Emergency</p>
+                                    <h3 class="text-base sm:text-lg md:text-xl font-bold">জাতীয় জরুরি সেবা</h3>
+                                    <p class="text-xs sm:text-sm md:text-base text-gray-600">National Emergency</p>
 
-                                  <!-- 999 and sorbo jonin  -->
-                                <div class="mt-3">
-                                   <div class="text-2xl font-extrabold">999</div>
-                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">সর্বজনীন</span>
+                                  <!-- 999 and sorbojonin  -->
+                                <div class="mt-2 sm:mt-3">
+                                   <div class="text-xl sm:text-2xl md:text-3xl font-extrabold">999</div>
+                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-[10px] sm:text-xs md:text-sm px-2 sm:px-3 py-1 rounded-full">সর্বজনীন</span>
                                 </div>
                                   <!-- 2 buttons -->
-                                <div class="mt-5 flex gap-3 ">
-                                   <button class="px-4 py-2 bg-gray-200 rounded-lg text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <div class="mt-4 sm:mt-5 flex gap-2 sm:gap-3">
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-gray-200 rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 
-                                   <button class="px-4 py-2 bg-[#00A63E] text-white rounded-lg text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-[#00A63E] text-white rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-phone"></i> Call</button>
                                 </div>
                             </div>
                             
                             <!--2nd পুলিশ সেবা -->
-                            <div class="relative bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
+                            <div class="relative bg-white rounded-2xl shadow-md p-4 sm:p-5 md:p-6 hover:shadow-lg transition">
                                 <!-- heart icon and image -->
-                                <span class="absolute top-4 right-4 text-xl"><i class="fa-solid fa-heart"></i></span>
-                                <div class="mb-3">
-                                   <div class="bg-red-100 text-red-600 rounded-xl p-3 text-2xl w-14 h-14">
+                                <span class="absolute top-3 right-3 sm:top-4 sm:right-4 text-lg sm:text-xl md:text-2xl"><i class="fa-solid fa-heart"></i></span>
+                                <div class="mb-2 sm:mb-3">
+                                   <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-red-100 rounded-xl p-2">
                                        <img src="./assets/police.png" alt=""    class="w-full h-full object-contain">
                                    </div>
                                 </div>
 
-                                    <h3 class="text-lg font-bold">পুলিশ</h3>
-                                    <p class="text-sm text-gray-600">Pulice</p>
+                                    <h3 class="text-base sm:text-lg md:text-xl font-bold">পুলিশ</h3>
+                                    <p class="text-xs sm:text-sm md:text-base text-gray-600">Pulice</p>
 
                                   <!-- 999 and sorbo jonin  -->
-                                <div class="mt-3">
-                                   <div class="text-2xl font-extrabold">999</div>
-                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">পুলিশ</span>
+                                <div class="mt-2 sm:mt-3">
+                                   <div class="text-xl sm:text-2xl md:text-3xl font-extrabold">999</div>
+                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-[10px] sm:text-xs md:text-sm px-2 sm:px-3 py-1 rounded-full">পুলিশ</span>
                                 </div>
                                   <!-- 2 buttons -->
-                                <div class="mt-5 flex gap-3 ">
-                                   <button class="px-4 py-2 bg-gray-200 rounded-lg text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <div class="mt-4 sm:mt-5 flex gap-2 sm:gap-3">
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-gray-200 rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 
-                                   <button class="px-4 py-2 bg-[#00A63E] text-white rounded-lg text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-[#00A63E] text-white rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-phone"></i> Call</button>
                                 </div>
                             </div>
                             <!--3rd ফায়ার সার্ভিস সেবা -->
-                            <div class="relative bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
+                            <div class="relative bg-white rounded-2xl shadow-md p-4 sm:p-5 md:p-6 hover:shadow-lg transition">
                                 <!-- heart icon and image -->
-                                <span class="absolute top-4 right-4 text-xl"><i class="fa-solid fa-heart"></i></span>
-                                <div class="mb-3">
-                                   <div class="bg-red-100 text-red-600 rounded-xl p-3 text-2xl w-14 h-14">
-                                       <img src="./assets/fire-service.png" alt="" class="w-full h-full object-contain">
+                                <span class="absolute top-3 right-3 sm:top-4 sm:right-4 text-lg sm:text-xl md:text-2xl"><i class="fa-solid fa-heart"></i></span>
+                                <div class="mb-2 sm:mb-3">
+                                   <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-red-100 rounded-xl p-2">
+                                       <img src="./assets/fire-service.png" alt=""    class="w-full h-full object-contain">
                                    </div>
                                 </div>
 
-                                    <h3 class="text-lg font-bold">ফায়ার সার্ভিস</h3>
-                                    <p class="text-sm text-gray-600">Fire Service</p>
+                                    <h3 class="text-base sm:text-lg md:text-xl font-bold">ফায়ার সার্ভিস</h3>
+                                    <p class="text-xs sm:text-sm md:text-base text-gray-600">Fire Service</p>
 
                                   <!-- 999 and sorbo jonin  -->
-                                <div class="mt-3">
-                                   <div class="text-2xl font-extrabold">999</div>
-                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">ফায়ার</span>
+                                <div class="mt-2 sm:mt-3">
+                                   <div class="text-xl sm:text-2xl md:text-3xl font-extrabold">999</div>
+                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-[10px] sm:text-xs md:text-sm px-2 sm:px-3 py-1 rounded-full">ফায়ার</span>
                                 </div>
                                   <!-- 2 buttons -->
-                                <div class="mt-5 flex gap-3 ">
-                                   <button class="px-4 py-2 bg-gray-200 rounded-lg text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <div class="mt-4 sm:mt-5 flex gap-2 sm:gap-3">
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-gray-200 rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 
-                                   <button class="px-4 py-2 bg-[#00A63E] text-white rounded-lg text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-[#00A63E] text-white rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-phone"></i> Call</button>
                                 </div>
                             </div>
                             <!--4th অ্যাম্বুলেন্স সেবা -->
-                            <div class="relative bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
+                            <div class="relative bg-white rounded-2xl shadow-md p-4 sm:p-5 md:p-6 hover:shadow-lg transition">
                                 <!-- heart icon and image -->
-                                <span class="absolute top-4 right-4 text-xl"><i class="fa-solid fa-heart"></i></span>
-                                <div class="mb-3">
-                                   <div class="bg-red-100 text-red-600 rounded-xl p-3 text-2xl w-14 h-14">
-                                       <img src="./assets/ambulance.png" alt="" class="w-full h-full object-contain">
+                                <span class="absolute top-3 right-3 sm:top-4 sm:right-4 text-lg sm:text-xl md:text-2xl"><i class="fa-solid fa-heart"></i></span>
+                                <div class="mb-2 sm:mb-3">
+                                   <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-red-100 rounded-xl p-2">
+                                       <img src="./assets/ambulance.png" alt=""    class="w-full h-full object-contain">
                                    </div>
                                 </div>
 
-                                    <h3 class="text-lg font-bold">অ্যাম্বুলেন্স</h3>
-                                    <p class="text-sm text-gray-600">Ambulance</p>
+                                    <h3 class="text-base sm:text-lg md:text-xl font-bold">অ্যাম্বুলেন্স</h3>
+                                    <p class="text-xs sm:text-sm md:text-base text-gray-600">Ambulance</p>
 
                                   <!-- 999 and sorbo jonin  -->
-                                <div class="mt-3">
-                                   <div class="text-2xl font-extrabold">1994-999999</div>
-                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">স্বাস্থ্য</span>
+                                <div class="mt-2 sm:mt-3">
+                                   <div class="text-xl sm:text-2xl md:text-3xl font-extrabold">1994-999999</div>
+                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-[10px] sm:text-xs md:text-sm px-2 sm:px-3 py-1 rounded-full">স্বাস্থ্য</span>
                                 </div>
                                   <!-- 2 buttons -->
-                                <div class="mt-5 flex gap-3 ">
-                                   <button class="px-4 py-2 bg-gray-200 rounded-lg text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <div class="mt-4 sm:mt-5 flex gap-2 sm:gap-3">
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-gray-200 rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 
-                                   <button class="px-4 py-2 bg-[#00A63E] text-white rounded-lg text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-[#00A63E] text-white rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-phone"></i> Call</button>
                                 </div>
                             </div>
                             <!--5th নারী ও শিশু সহায়তা সেবা -->
-                            <div class="relative bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
+                            <div class="relative bg-white rounded-2xl shadow-md p-4 sm:p-5 md:p-6 hover:shadow-lg transition">
                                 <!-- heart icon and image -->
-                                <span class="absolute top-4 right-4 text-xl"><i class="fa-solid fa-heart"></i></span>
-                                <div class="mb-3">
-                                   <div class="bg-red-100 text-red-600 rounded-xl p-3 text-2xl w-14 h-14">
-                                       <img src="./assets/emergency.png" alt=""class="w-full h-full object-contain">
+                                <span class="absolute top-3 right-3 sm:top-4 sm:right-4 text-lg sm:text-xl md:text-2xl"><i class="fa-solid fa-heart"></i></span>
+                                <div class="mb-2 sm:mb-3">
+                                   <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-red-100 rounded-xl p-2">
+                                       <img src="./assets/emergency.png" alt=""    class="w-full h-full object-contain">
                                    </div>
                                 </div>
 
-                                    <h3 class="text-lg font-bold">নারী ও শিশু সহায়তা</h3>
-                                    <p class="text-sm text-gray-600">Women & Child Helpline</p>
+                                    <h3 class="text-base sm:text-lg md:text-xl font-bold">নারী ও শিশু সহায়তা</h3>
+                                    <p class="text-xs sm:text-sm md:text-base text-gray-600">Women & Child Helpline</p>
 
                                   <!-- 999 and sorbo jonin  -->
-                                <div class="mt-3">
-                                   <div class="text-2xl font-extrabold">109</div>
-                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">সহায়তা</span>
+                                <div class="mt-2 sm:mt-3">
+                                   <div class="text-xl sm:text-2xl md:text-3xl font-extrabold">109</div>
+                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-[10px] sm:text-xs md:text-sm px-2 sm:px-3 py-1 rounded-full">সহায়তা</span>
                                 </div>
                                   <!-- 2 buttons -->
-                                <div class="mt-5 flex gap-3 ">
-                                   <button class="px-4 py-2 bg-gray-200 rounded-lg text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <div class="mt-4 sm:mt-5 flex gap-2 sm:gap-3">
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-gray-200 rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 
-                                   <button class="px-4 py-2 bg-[#00A63E] text-white rounded-lg text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-[#00A63E] text-white rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-phone"></i> Call</button>
                                 </div>
                             </div>
                             <!--6th দুদক সেবা -->
-                            <div class="relative bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
+                            <div class="relative bg-white rounded-2xl shadow-md p-4 sm:p-5 md:p-6 hover:shadow-lg transition">
                                 <!-- heart icon and image -->
-                                <span class="absolute top-4 right-4 text-xl"><i class="fa-solid fa-heart"></i></span>
-                                <div class="mb-3">
-                                   <div class="bg-red-100 text-red-600 rounded-xl p-3 text-2xl w-14 h-14">
-                                       <img src="./assets/emergency.png" alt=""class="w-full h-full object-contain">
+                                <span class="absolute top-3 right-3 sm:top-4 sm:right-4 text-lg sm:text-xl md:text-2xl"><i class="fa-solid fa-heart"></i></span>
+                                <div class="mb-2 sm:mb-3">
+                                   <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-red-100 rounded-xl p-2">
+                                       <img src="./assets/emergency.png" alt=""    class="w-full h-full object-contain">
                                    </div>
                                 </div>
 
-                                    <h3 class="text-lg font-bold">দুদক</h3>
-                                    <p class="text-sm text-gray-600">Anti-Corruption</p>
+                                    <h3 class="text-base sm:text-lg md:text-xl font-bold">দুদক</h3>
+                                    <p class="text-xs sm:text-sm md:text-base text-gray-600">Anti-Corruption</p>
 
                                   <!-- 999 and sorbo jonin  -->
-                                <div class="mt-3">
-                                   <div class="text-2xl font-extrabold">106</div>
-                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">সরকারি</span>
+                                <div class="mt-2 sm:mt-3">
+                                   <div class="text-xl sm:text-2xl md:text-3xl font-extrabold">106</div>
+                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-[10px] sm:text-xs md:text-sm px-2 sm:px-3 py-1 rounded-full">সরকারি</span>
                                 </div>
                                   <!-- 2 buttons -->
-                                <div class="mt-5 flex gap-3 ">
-                                   <button class="px-4 py-2 bg-gray-200 rounded-lg text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <div class="mt-4 sm:mt-5 flex gap-2 sm:gap-3">
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-gray-200 rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 
-                                   <button class="px-4 py-2 bg-[#00A63E] text-white rounded-lg text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-[#00A63E] text-white rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-phone"></i> Call</button>
                                 </div>
                             </div>
                             <!--7th বিদ্যুৎ বিভাগ সেবা -->
-                            <div class="relative bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
+                            <div class="relative bg-white rounded-2xl shadow-md p-4 sm:p-5 md:p-6 hover:shadow-lg transition">
                                 <!-- heart icon and image -->
-                                <span class="absolute top-4 right-4 text-xl"><i class="fa-solid fa-heart"></i></span>
-                                <div class="mb-3">
-                                   <div class="bg-red-100 text-red-600 rounded-xl p-3 text-2xl w-14 h-14">
-                                       <img src="./assets/emergency.png" alt=""class="w-full h-full object-contain">
+                                <span class="absolute top-3 right-3 sm:top-4 sm:right-4 text-lg sm:text-xl md:text-2xl"><i class="fa-solid fa-heart"></i></span>
+                                <div class="mb-2 sm:mb-3">
+                                   <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-red-100 rounded-xl p-2">
+                                       <img src="./assets/emergency.png" alt=""    class="w-full h-full object-contain">
                                    </div>
                                 </div>
 
-                                    <h3 class="text-lg font-bold">বিদ্যুৎ বিভাগ</h3>
-                                    <p class="text-sm text-gray-600">Electricity Outage</p>
+                                    <h3 class="text-base sm:text-lg md:text-xl font-bold">বিদ্যুৎ বিভ্রাট</h3>
+                                    <p class="text-xs sm:text-sm md:text-base text-gray-600">Electricity Outage</p>
 
                                   <!-- 999 and sorbo jonin  -->
-                                <div class="mt-3">
-                                   <div class="text-2xl font-extrabold">16216</div>
-                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">বিদ্যুৎ</span>
+                                <div class="mt-2 sm:mt-3">
+                                   <div class="text-xl sm:text-2xl md:text-3xl font-extrabold">16216</div>
+                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-[10px] sm:text-xs md:text-sm px-2 sm:px-3 py-1 rounded-full">বিদ্যুৎ</span>
                                 </div>
                                   <!-- 2 buttons -->
-                                <div class="mt-5 flex gap-3 ">
-                                   <button class="px-4 py-2 bg-gray-200 rounded-lg text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <div class="mt-4 sm:mt-5 flex gap-2 sm:gap-3">
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-gray-200 rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 
-                                   <button class="px-4 py-2 bg-[#00A63E] text-white rounded-lg text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-[#00A63E] text-white rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-phone"></i> Call</button>
                                 </div>
                             </div>
                             <!--8th ব্র্যাক জাতীয় জরুরি সেবা -->
-                            <div class="relative bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
+                            <div class="relative bg-white rounded-2xl shadow-md p-4 sm:p-5 md:p-6 hover:shadow-lg transition">
                                 <!-- heart icon and image -->
-                                <span class="absolute top-4 right-4 text-xl"><i class="fa-solid fa-heart"></i></span>
-                                <div class="mb-3">
-                                   <div class="bg-red-100 text-red-600 rounded-xl p-3 text-2xl w-14 h-14">
-                                       <img src="./assets/emergency.png" alt="" class="w-full h-full object-contain">
+                                <span class="absolute top-3 right-3 sm:top-4 sm:right-4 text-lg sm:text-xl md:text-2xl"><i class="fa-solid fa-heart"></i></span>
+                                <div class="mb-2 sm:mb-3">
+                                   <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-red-100 rounded-xl p-2">
+                                       <img src="./assets/emergency.png" alt=""    class="w-full h-full object-contain">
                                    </div>
                                 </div>
 
-                                    <h3 class="text-lg font-bold">ব্র্যাক</h3>
-                                    <p class="text-sm text-gray-600">Brac</p>
+                                    <h3 class="text-base sm:text-lg md:text-xl font-bold">ব্র্যাক</h3>
+                                    <p class="text-xs sm:text-sm md:text-base text-gray-600">Brack</p>
 
                                   <!-- 999 and sorbo jonin  -->
-                                <div class="mt-3">
-                                   <div class="text-2xl font-extrabold">16445</div>
-                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">এনজিও</span>
+                                <div class="mt-2 sm:mt-3">
+                                   <div class="text-xl sm:text-2xl md:text-3xl font-extrabold">16445</div>
+                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-[10px] sm:text-xs md:text-sm px-2 sm:px-3 py-1 rounded-full">এনজিও</span>
                                 </div>
                                   <!-- 2 buttons -->
-                                <div class="mt-5 flex gap-3 ">
-                                   <button class="px-4 py-2 bg-gray-200 rounded-lg text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <div class="mt-4 sm:mt-5 flex gap-2 sm:gap-3">
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-gray-200 rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 
-                                   <button class="px-4 py-2 bg-[#00A63E] text-white rounded-lg text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-[#00A63E] text-white rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-phone"></i> Call</button>
                                 </div>
                             </div>
 
                             <!--9th  বাংলাদেশ রেলওয়ে সেবা -->
-                            <div class="relative bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
+                            <div class="relative bg-white rounded-2xl shadow-md p-4 sm:p-5 md:p-6 hover:shadow-lg transition">
                                 <!-- heart icon and image -->
-                               
-                                <span class="absolute top-4 right-4 text-xl"><i class="fa-solid fa-heart"></i></span>
-                                
-                                <div class="mb-3">
-                                   <div class="bg-red-100 text-red-600 rounded-xl p-3 text-2xl w-14 h-14">
-                                       <img src="./assets/emergency.png" alt=""class="w-full h-full object-contain">
+                                <span class="absolute top-3 right-3 sm:top-4 sm:right-4 text-lg sm:text-xl md:text-2xl"><i class="fa-solid fa-heart"></i></span>
+                                <div class="mb-2 sm:mb-3">
+                                   <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-red-100 rounded-xl p-2">
+                                       <img src="./assets/emergency.png" alt=""    class="w-full h-full object-contain">
                                    </div>
                                 </div>
 
-                                    <h3 class="text-lg font-bold">বাংলাদেশ রেলওয়ে</h3>
-                                    <p class="text-sm text-gray-600">Bangladesh Railway</p>
+                                    <h3 class="text-base sm:text-lg md:text-xl font-bold">বাংলাদেশ রেলওয়ে</h3>
+                                    <p class="text-xs sm:text-sm md:text-base text-gray-600">Bangladesh Railway</p>
 
                                   <!-- 999 and sorbo jonin  -->
-                                <div class="mt-3">
-                                   <div class="text-2xl font-extrabold">163</div>
-                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">পরিবহন</span>
+                                <div class="mt-2 sm:mt-3">
+                                   <div class="text-xl sm:text-2xl md:text-3xl font-extrabold">163</div>
+                                   <span class="inline-block mt-2 bg-gray-200 text-gray-700 text-[10px] sm:text-xs md:text-sm px-2 sm:px-3 py-1 rounded-full">পরিবহন</span>
                                 </div>
                                   <!-- 2 buttons -->
-                                <div class="mt-5 flex gap-3 ">
-                                   <button class="px-4 py-2 bg-gray-200 rounded-lg text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
+                                <div class="mt-4 sm:mt-5 flex gap-2 sm:gap-3">
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-gray-200 rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-copy"></i> Copy</button>
 
-                                   <button class="px-4 py-2 bg-[#00A63E] text-white rounded-lg text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                                   <button class="px-3 py-1 sm:px-4 sm:py-2 bg-[#00A63E] text-white rounded-lg text-xs sm:text-sm"><i class="fa-solid fa-phone"></i> Call</button>
                                 </div>
                             </div>
 
@@ -322,7 +321,7 @@
                 </section>
                            
                 <!-- Aside part Call History + Button-->
-                <aside id="call-history" class="col-span-4">
+                <aside id="call-history" class="col-span-12 sm:col-span-4 mt-6 sm:mt-0">
                          <!-- Call History box -->
                     <div class="bg-white rounded-2xl shadow-lg p-5">
               
@@ -331,7 +330,8 @@
                         <div class="flex items-center justify-between mb-3">
                             <h4 class="text-sm font-bold"><i class="fa-solid fa-clock"></i> Call History</h4>
                             <!-- id="clear-history" -->
-                            <button id="clear-history" class="px-3 py-1 text-white text-lg bg-[#00A63E] rounded-lg w-[98px] h-[45px]">Clear</button>
+                            <button id="clear-history" class="px-3 py-1 text-white text-sm sm:text-base md:text-lg 
+                               bg-[#00A63E] rounded-lg w-[90px] sm:w-[98px] h-[40px] sm:h-[45px]">Clear</button>
                         </div>
 
                              <!-- History list (each item is a small card with bg)   id="history-list"-->
