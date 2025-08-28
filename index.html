@@ -15,7 +15,7 @@
 <body>
    <header >
     <!-- nav bar section -->
-    <section class="max-w-[1250px] mx-auto shadow-[0_1px_50px_rgba(181,181,181,0.25)] bg-white flex justify-between items-center py-[24px] px-[60px] ">
+    <section class=" md:max-w-[1250px] sm:max-w-[640px] mx-auto shadow-[0_1px_50px_rgba(181,181,181,0.25)] bg-white flex justify-between items-center sm:flex-row justify-between items-center py-[24px] px-[60px] sm:py-6 sm:px-8 md:px-[60px] gap-4 sm:gap-0 ">
          <!-- nav bar left -->
         <div class="nav-left flex justify-center items-center gap-2">
                 <!-- logo and EmergencyService -->
@@ -31,21 +31,21 @@
         </div>
       <!-- nav right -->
         <div class="nav-right flex justify-center items-center gap-4">
-              <!-- 1st heart icon -->
+              <!-- 1st heart icon   id="heart-count" -->
             <div class="w-[120px] h-[52px] flex justify-center items-center gap-2 rounded-[50px] bg-[#41ff6b1a] ">
-                <h1 class="font-bold text-lg">0</h1>
+                <h1 id="heart-count" class="font-bold text-lg">0</h1>
                 <img src="./assets/heart.png" alt="" class=" w-7">
             </div>
 
-             <!-- 2nd coin icon -->
+             <!-- 2nd coin icon id="coin-count" -->
             <div class="w-[120px] h-[52px] flex justify-center items-center gap-2 rounded-[50px] bg-[#41ff6b1a] ">
-                <h1 class="font-bold text-lg">100</h1>
+                <h1 id="coin-count" class="font-bold text-lg">100</h1>
                 <img src="./assets/coin.png" alt="" class=" w-7">
             </div>
 
-             <!-- 3rd copy icon -->
+             <!-- 3rd copy icon id="copy-count"-->
             <div class="w-[120px] h-[52px] flex justify-center items-center gap-2 rounded-[50px] bg-[#00a63e] text-white ">
-                <h1 class="font-bold text-lg">2</h1>
+                <h1 id="copy-count" class="font-bold text-lg">2</h1>
                 <p class="text-lg font-semibold">copy</p>
             </div>
 
@@ -77,7 +77,7 @@
           <!-- জাতীয় জরুরি সেবা সমূহ সেকশন-->
           
           <section id="service-container" class="w-9/12 mx-auto mt-7 border-2 border-green-500 grid grid-cols-12 gap-8">
-                    <!-- জরুরি সেবা -->
+                    <!-- জরুরি সেবা   id="services-box"-->
                 <section id="services-box" class="col-span-8">
                     <!-- জরুরি সেবা  r card gulo -->
                     <div class="service">
@@ -86,7 +86,7 @@
                             
                             <!--1st জাতীয় জরুরি সেবা -->
                             <div class="relative bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
-                                <!-- heart icon and image -->
+                                <!-- heart icon and image class=fa-heart-->
                                 <span class="absolute top-4 right-4 text-xl"><i class="fa-solid fa-heart"></i></span>
                                 <div class="mb-3">
                     
@@ -291,7 +291,9 @@
                             <!--9th  বাংলাদেশ রেলওয়ে সেবা -->
                             <div class="relative bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
                                 <!-- heart icon and image -->
-                                <span class="absolute top-4 right-4 text-xl  text-white"><i class="fa-solid fa-heart"></i></span>
+                               
+                                <span class="absolute top-4 right-4 text-xl"><i class="fa-solid fa-heart"></i></span>
+                                
                                 <div class="mb-3">
                                    <div class="bg-red-100 text-red-600 rounded-xl p-3 text-2xl w-14 h-14">
                                        <img src="./assets/emergency.png" alt=""class="w-full h-full object-contain">
@@ -328,13 +330,15 @@
 
                         <div class="flex items-center justify-between mb-3">
                             <h4 class="text-sm font-bold"><i class="fa-solid fa-clock"></i> Call History</h4>
-                            <button class="px-3 py-1 text-white text-lg bg-[#00A63E] rounded-lg w-[98px] h-[45px]">Clear</button>
+                            <!-- id="clear-history" -->
+                            <button id="clear-history" class="px-3 py-1 text-white text-lg bg-[#00A63E] rounded-lg w-[98px] h-[45px]">Clear</button>
                         </div>
 
-                             <!-- History list (each item is a small card with bg) -->
-                      <div class="space-y-3">
+                             <!-- History list (each item is a small card with bg)   id="history-list"-->
+                      <div id="history-list" class="space-y-3">
+
                             <!-- History item 1 জাতীয় জরুরি সেবা-->
-                        <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
+                        <!-- <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
                             <div>
                               <p class="font-semibold text-sm">জাতীয় জরুরি সেবা
                               </p>
@@ -343,21 +347,21 @@
                             <div class="text-right">
                               <p class="text-xs text-gray-600">11:36:58 AM</p>
                             </div>
-                        </div>
+                        </div> -->
 
                               <!-- History item 2 পুলিশ-->
-                        <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
+                        <!-- <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
                              <div>
                                <p class="font-semibold text-sm">পুলিশ
-</p>
+                               </p>
                                <p class="text-xs text-gray-500">1994-999999</p>
                               </div>
                               <div class="text-right">
                                 <p class="text-xs text-gray-600">11:36:58 AM</p>
                               </div>
-                            </div>
+                            </div> -->
 
-                                   <!-- History item 3 ফায়ার সার্ভিস -->
+                                   <!-- History item 3 ফায়ার সার্ভিস
                             <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
                               <div>
                                 <p class="font-semibold text-sm">ফায়ার সার্ভিস
@@ -367,9 +371,9 @@
                               <div class="text-right">
                                 <p class="text-xs text-gray-600">11:36:58 AM</p>
                               </div>
-                            </div>
+                            </div> -->
                                  <!-- History item 4 অ্যাম্বুলেন্স -->
-                            <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
+                            <!-- <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
                               <div>
                                 <p class="font-semibold text-sm">অ্যাম্বুলেন্স
                                 </p>
@@ -378,9 +382,9 @@
                               <div class="text-right">
                                 <p class="text-xs text-gray-600">11:36:58 AM</p>
                               </div>
-                            </div>
+                            </div> -->
                              <!-- History item 5 নারী ও শিশু সহায়তা -->
-                            <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
+                            <!-- <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
                               <div>
                                 <p class="font-semibold text-sm">নারী ও শিশু সহায়তা
                                 </p>
@@ -389,9 +393,9 @@
                               <div class="text-right">
                                 <p class="text-xs text-gray-600">11:36:58 AM</p>
                               </div>
-                            </div>
+                            </div> -->
 
-                             <!-- History item 6 দুদক -->
+                             <!-- History item 6 দুদক
                             <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
                               <div>
                                 <p class="font-semibold text-sm">দুদক
@@ -401,9 +405,9 @@
                               <div class="text-right">
                                 <p class="text-xs text-gray-600">11:36:58 AM</p>
                               </div>
-                            </div>
+                            </div> -->
                              <!-- History item 7 বিদ্যুৎ বিভাগ -->
-                            <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
+                            <!-- <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
                               <div>
                                 <p class="font-semibold text-sm">বিদ্যুৎ বিভাগ
                                 </p>
@@ -412,9 +416,9 @@
                               <div class="text-right">
                                 <p class="text-xs text-gray-600">11:36:58 AM</p>
                               </div>
-                            </div>
+                            </div> -->
                              <!-- History item 8 ব্র্যাক -->
-                            <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
+                            <!-- <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
                               <div>
                                 <p class="font-semibold text-sm">ব্র্যাক
                                 </p>
@@ -423,9 +427,9 @@
                               <div class="text-right">
                                 <p class="text-xs text-gray-600">11:36:58 AM</p>
                               </div>
-                            </div>
+                            </div> -->
                              <!-- History item 9 বাংলাদেশ রেলওয়ে-->
-                            <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
+                            <!-- <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between shadow-sm">
                               <div>
                                 <p class="font-semibold text-sm">বাংলাদেশ রেলওয়ে
                                 </p>
@@ -434,7 +438,7 @@
                               <div class="text-right">
                                 <p class="text-xs text-gray-600">11:36:58 AM</p>
                               </div>
-                            </div>
+                            </div> -->
                              
 
                               
